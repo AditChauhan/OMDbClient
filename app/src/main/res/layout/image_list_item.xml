@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019. Created By Adit Chauhan
+  -->
+
+<tutorial.adit.com.omdbclient.helper.SquareLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation = "vertical">
+
+    <ImageView
+        android:id="@+id/image_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:transitionName="profile"
+        android:visibility="invisible" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_alignParentBottom="true"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/moviename"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="adit chauhan"
+        android:textColor="#fff"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/yearreleased"
+        android:background="@null"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:text="year : 1992"
+        android:textSize="16dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:gravity="start"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+</tutorial.adit.com.omdbclient.helper.SquareLayout>

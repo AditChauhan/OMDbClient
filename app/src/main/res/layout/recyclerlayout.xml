@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) 2019. Created By Adit Chauhan
+  -->
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginTop="16dp"
+
+        android:id="@+id/images_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:transitionName="profile"
+        android:scrollbars="vertical" />
+
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="400dp"
+        android:layout_height="400dp"
+        android:visibility="invisible"
+        android:layout_centerInParent="true"/>
+
+
+    <LinearLayout
+        android:id="@+id/blankpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <TextView
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Search above to get the movies details"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
